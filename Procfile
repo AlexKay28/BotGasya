@@ -1,1 +1,1 @@
-web: gunicorn app:botgasya/app
+web: gunicorn app:app
