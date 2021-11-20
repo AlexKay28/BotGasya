@@ -1,17 +1,16 @@
 import json
 
 from flask import Flask
-from flask import render_template, request, jsonify
+from flask import request, jsonify
 
 
 app = Flask(__name__)
 
 
-@app.route("/")
-@app.route("/home")
-def index():
+@app.route("/", methods=["GET"])
+def speak_with_gasya():
 
-    return render_template("index.html")
+    return jsonify({"say": "ну, блин("})
 
 
 if __name__ == "__main__":
