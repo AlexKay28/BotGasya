@@ -1,7 +1,7 @@
 import json
 
 from flask import Flask
-from flask import request, jsonify
+from flask import render_template, request, jsonify
 
 
 app = Flask(__name__)
@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route("/home")
 def index():
 
-    return jsonify({"answer": 123})
+    return render_template("index.html")
 
 
 if __name__ == "__main__":
