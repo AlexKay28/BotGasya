@@ -7,8 +7,7 @@ from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 from src.answer import handle_message
 
 # Loading environmental variables
-load_dotenv(".env")
-
+# load_dotenv(".env")
 
 ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
 GROUP_ID = int(os.getenv("GROUP_ID"))
