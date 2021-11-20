@@ -7,10 +7,11 @@ from flask import request, jsonify
 app = Flask(__name__)
 
 
-@app.route("/", methods=["GET"])
-def speak_with_gasya():
+@app.route("/")
+@app.route("/home")
+def index():
 
-    return "ну, блин("
+    return jsonify({"answer": 123})
 
 
 if __name__ == "__main__":
